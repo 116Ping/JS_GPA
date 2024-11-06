@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic_JS</title>
+
+    <style>
+        body{
+            text-align: center;
+            background-color: rgb(31, 31, 128);
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>
+        GPA, Height and Weight in JavaScript
+    </h1>
+
+    <br>
+
+    <h5>
+        GPA:
+    </h5>
+
+    <input type="text" id="gpa">
+
+    <h5>
+        Height:
+    </h5>
+
+    <input type="text" id="height">
+
+    <h5>
+        Weight:
+    </h5>
+
+    <input type="text" id="weight">
+
+    <br> <br>
+
+    <button onclick="myFunction()">
+        Submit
+    </button>
+
+    <h3 id="message1">
+    </h3>
+
+    <h3 id="message2">
+    </h3>
+
+    <h3 id="message3">
+    </h3>
+
+    <script>
+        function myFunction(){
+            var gpa = parseFloat(document.getElementById("gpa").value);
+
+            var height = parseFloat(document.getElementById("height").value);
+
+            var weight = parseFloat(document.getElementById("weight").value);
+
+            document.getElementById("message1").innerHTML = "GPA: " + gpa.toFixed(2);
+
+            document.getElementById("message2").innerHTML = "Height: " + height.toFixed(2);
+
+            document.getElementById("message3").innerHTML = "Weight: " + weight.toFixed(2);
+
+        }
+
+
+
+        // document.getElementById("message").innerHTML = "hello, " + prompt("GPA");
+
+    </script>
+    
+</body>
+</html>
